@@ -1,0 +1,59 @@
+.sources {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    font:
+        300 1em 'Fira Sans',
+        sans-serif;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #3d8d7a #b3d8a8;
+}
+
+.sources::-webkit-scrollbar {
+    height: 8px;
+}
+
+.sources::-webkit-scrollbar-track {
+    background: #b3d8a8;
+}
+
+.sources::-webkit-scrollbar-thumb {
+    background: #3d8d7a;
+    border-radius: 4px;
+}
+
+.sources::-webkit-scrollbar-thumb:hover {
+    background: #a3d1c6;
+}
+
+.source__item {
+    background: none;
+    border: 1px solid #b3d8a8;
+    border-radius: 4px;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    color: #b3d8a8;
+    transition: 0.25s;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.source__item:hover,
+.source__item:focus {
+    border-color: #a3d1c6;
+    color: #a3d1c6;
+    box-shadow: 0 0.5em 0.5em -0.4em #a3d1c6;
+    transform: translateY(-0.25em);
+}
+
+.source__item-name {
+    font-weight: 400;
+    white-space: nowrap;
+}
