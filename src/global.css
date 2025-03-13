@@ -1,0 +1,116 @@
+body {
+    color: #fbffe4;
+    background: #3d8d7a;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 20px 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.main {
+    margin-bottom: 100px;
+    padding: 20px 50px;
+}
+
+footer {
+    padding: 40px 50px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__copyright-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.footer__copyright {
+    font-size: 14px;
+    color: #fbffe4;
+}
+.footer__link--copyright {
+    color: #b3d8a8;
+    text-decoration: none;
+}
+
+.footer__link--copyright:hover {
+    color: #a3d1c6;
+}
+.footer__copyright::before {
+    content: '©';
+}
+
+.footer__year {
+    font-size: 16px;
+    color: #b3d8a8;
+}
+
+.footer__year::before {
+    content: '@The year of the application';
+    font-size: 14px;
+    margin-right: 10px;
+    color: #fbffe4;
+}
+
+.footer__link {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo {
+    height: 40px;
+    width: auto;
+    content: url('./assets/logo-rss.png');
+}
+
+@media (max-width: 850px) {
+    header {
+        padding: 10px 0px;
+    }
+
+    .main {
+        padding: 10px 0px;
+    }
+
+    footer {
+        padding: 20px 0px;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer__copyright {
+        display: none;
+    }
+    .footer__link--copyright {
+        margin-left: 0;
+    }
+
+    .footer__year::before {
+        content: unset;
+    }
+}
+
+@media (max-width: 380px) {
+    header h1 {
+        font-size: 35px;
+    }
+}
